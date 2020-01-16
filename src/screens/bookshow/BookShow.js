@@ -70,7 +70,7 @@ class BookShow extends Component {
         })
 
         xhrFilter.open("GET", this.props.baseUrl + "movies/" + this.props.match.params.id + "/shows");
-        xhrFilter.setRequestHeader("Cache-Control", "no-cache");
+       // xhrFilter.setRequestHeader("Cache-Control", "no-cache");
         xhrFilter.send(dataFilter);
 
 
