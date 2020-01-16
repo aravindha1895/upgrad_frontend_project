@@ -77,7 +77,7 @@ class Home extends Component {
     })
 
     xhrUpcoming.open("GET", this.props.baseUrl + "movies?status=PUBLISHED");
-    xhrUpcoming.setRequestHeader("Cache-Control", "no-cache");
+    // xhrUpcoming.setRequestHeader("Cache-Control", "no-cache");
     xhrUpcoming.send(dataUpcoming);
 
     //Get Released Movies
@@ -90,7 +90,7 @@ class Home extends Component {
     })
 
     xhrReleased.open("GET", this.props.baseUrl + "movies?status=RELEASED");
-    xhrReleased.setRequestHeader("Cache-Control", "no-cache");
+    // xhrReleased.setRequestHeader("Cache-Control", "no-cache");
     xhrReleased.send(dataReleased);
 
     //Get Genres
@@ -103,7 +103,7 @@ class Home extends Component {
     })
 
     xhrGenres.open("GET", this.props.baseUrl + "genres");
-    xhrGenres.setRequestHeader("Cache-Control", "no-cache");
+    // xhrGenres.setRequestHeader("Cache-Control", "no-cache");
     xhrGenres.send(dataGenres);
 
     //Get Artists
@@ -116,7 +116,7 @@ class Home extends Component {
     })
 
     xhrArtists.open("GET", this.props.baseUrl + "artists");
-    xhrArtists.setRequestHeader("Cache-Control", "no-cache");
+    // xhrArtists.setRequestHeader("Cache-Control", "no-cache");
     xhrArtists.send(dataArtists);
   }
 
